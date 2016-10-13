@@ -1,7 +1,11 @@
 nav {
-  margin-top: 10px;
+  margin: 0px;
 }
 
 img {
   width: 100%;
+}
+
+.navbar:nth-child(1) {
+  margin-top: 0;
 }
