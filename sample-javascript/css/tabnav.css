@@ -1,0 +1,16 @@
+
+.tab-content {
+  border-left: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.circle {
+  border: 5px solid #DDDDDD;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
