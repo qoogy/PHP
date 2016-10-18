@@ -3,15 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Javascript</title>
+    <title>Bootstrap</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 
   </head>
+  <style>
+    h2 {
+      padding-top: 20px;
+      padding-left: 40px;
+    }
+    h3 {
+      padding-left: 40px;
+    }
+  </style>
   <body>
-    <nav class="navbar navbar-default navbar-static-top navbar-default">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
@@ -19,53 +28,53 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Web</a>
+          <a class="navbar-brand" href="C:\wamp64\www2\Web\web.html">Web</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Compoenent <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="./index2.html">Dropdown</a></li>
+                  <li><a href="./sample-component/btngroup.html">Button Group</a></li>
+                  <li><a href="./sample-component/btndropdown.html">Button Dropdown</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./sample-component/group.html">Group</a></li>
+                  <li><a href="./sample-component/inputgroup.html">Input Group</a></li>
+                  <li><a href="./sample-component/jumbotron.html">Jumbo Tron</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./sample-component/media.html">Media</a></li>
+                  <li><a href="./sample-component/navs.html">Navs</a></li>
+                  <li><a href="./sample-component/navbar.html">Navbar</a></li>
+                  <li><a href="./sample-component/pagenation.html">Pagenation</a></li>
+                  <li><a href="./sample-component/progressbar.html">Progressbar</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Javascript <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="./sample-javascript/modal.html">Modal</a></li>
+                  <li><a href="./sample-javascript/dropdown.html">Dropdown</a></li>
+                  <li><a href="./sample-javascript/scrollspy.html">Scrollspy</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./sample-javascript/tooltip.html">Tooltip</a></li>
+                  <li><a href="./sample-javascript/tabnav.html">Tabnav</a></li>
+                  <li><a href="./sample-javascript/popover.html">Popover</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./sample-javascript/loading.html">Loading</a></li>
+                  <li><a href="./sample-javascript/collapse.html">Collapse</a></li>
+                  <li><a href="./sample-javascript/carousel.html">Carousel</a></li>
+                  <li><a href="./sample-javascript/affix.html">Affix</a></li>
+                </ul>
+            </li>
           </ul>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Compoenent <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="index2.html">Dropdown</a></li>
-                  <li><a href="index2.html">Button Group</a></li>
-                  <li><a href="index2.html">Button Dropdown</a></li>
-                  <li class="divider"></li>
-                  <li><a href="index2.html">Group</a></li>
-                  <li><a href="index2.html">Input Group</a></li>
-                  <li><a href="index2.html">Jumbo Tron</a></li>
-                  <li class="divider"></li>
-                  <li><a href="index2.html">Media</a></li>
-                  <li><a href="index2.html">Navbar</a></li>
-                  <li><a href="index2.html">Navs</a></li>
-                  <li><a href="index2.html">pagenation</a></li>
-                  <li><a href="index2.html">progressbar</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Javascript <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Modal</a></li>
-                  <li><a href="#">Dropdown</a></li>
-                  <li><a href="#">Scrollspy</a></li>
-
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
-
-    <section class="container">
-
-    </section>
-
+      </div>
+    </nav>
+    <h2>환영합니다!</h2>
+    <h3>Bootstrap의 세계에 오신걸 환영합니다.</h3>
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
