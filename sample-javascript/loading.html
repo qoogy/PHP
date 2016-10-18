@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript - Loading</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loading.css">
+  </head>
+  <body>
+    <section class="container">
+      <button type="button" id="loadingBtn" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+        Loading state
+      </button>
+
+      <button type="button" id="toggleBtn" data-loading-text="Loading..." data-toggle="button" class="btn btn-warning" autocomplete="off">
+        Single Toggle
+      </button>
+
+      <hr>
+      <div class="btn-group" id="checkboxes" data-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Checkbox 2
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Checkbox 3
+        </label>
+      </div>
+      </br></br>
+      <div class="btn-group" id="radios" data-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+        </label>
+      </div>
+    </section>
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/loading.js"></script>
+  </body>
+</html>
