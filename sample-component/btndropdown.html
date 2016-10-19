@@ -6,39 +6,73 @@
     <title>Bootstrap - Btn Dropdown</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <section class="container" style="padding-top: 100px;">
-      <h1>Button Drop Down</h1>
-      <div class="btn-group">
-        <button type="button" class="btn btn-danger">
-          <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> Action</button>
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Action</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Another action</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#"><span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> Separated link</a></li>
-        </ul>
-      </div>
-      <div class="btn-group dropup">
-        <button type="button" class="btn btn-success">Dropup</button>
-        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Action</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Another action</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#"><span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> Separated link</a></li>
-        </ul>
+    <section class="container" style="padding-top: 70px;">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="/index.html">Home</a></li>
+            <li role="presentation"><a href="/sample-component/dropdown.html">Dropdown</a></li>
+            <li role="presentation"><a href="/sample-component/btngroup.html">Button Group</a></li>
+            <li role="presentation" class="active"><a href="#">Button Dropdown</a></li>
+            <li role="presentation"><a href="/sample-component/group.html">Group</a></li>
+            <li role="presentation"><a href="/sample-component/inputgroup.html">Input Group</a></li>
+            <li role="presentation"><a href="/sample-component/jumbotron.html">Jumbo Tron</a></li>
+            <li role="presentation"><a href="/sample-component/media.html">Media</a></li>
+            <li role="presentation"><a href="/sample-component/navs.html">Navs</a></li>
+            <li role="presentation"><a href="/sample-component/navbar.html">Navbar</a></li>
+            <li role="presentation"><a href="/sample-component/pagenation.html">pagenation</a></li>
+            <li role="presentation"><a href="/sample-component/progressbar.html">progressbar</a></li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">JavaScript <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="./sample-javascript/modal.html">Modal</a></li>
+                <li><a href="./sample-javascript/dropdown.html">Drop Down</a></li>
+                <li><a href="./sample-javascript/scrollspy.html">Scroll Spy</a></li>
+                <li><a href="./sample-javascript/tooltip.html">Tooltip</a></li>
+                <li><a href="./sample-javascript/tabnav.html">Tabnav</a></li>
+                <li><a href="./sample-javascript/popover.html">Popover</a></li>
+                <li><a href="./sample-javascript/loading.html">Loading</a></li>
+                <li><a href="./sample-javascript/collapse.html">Collapse</a></li>
+                <li><a href="./sample-javascript/carousel.html">Carousel</a></li>
+                <li><a href="./sample-javascript/affix.html">Affix</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h1>Button Drop Down</h1>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger">
+              <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> Action</button>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Action</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Another action</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> Separated link</a></li>
+            </ul>
+          </div>
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-success">Dropup</button>
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Action</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> Another action</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> Separated link</a></li>
+            </ul>
+          </div>
       </div>
     </section>
 

@@ -6,18 +6,9 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
 
   </head>
-  <style>
-    h2 {
-      padding-top: 20px;
-      padding-left: 40px;
-    }
-    h3 {
-      padding-left: 40px;
-    }
-  </style>
+
   <body>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
@@ -37,7 +28,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Compoenent <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                  <li><a href="./index2.html">Dropdown</a></li>
+                  <li><a href="./sample-component/dropdown.html">Dropdown</a></li>
                   <li><a href="./sample-component/btngroup.html">Button Group</a></li>
                   <li><a href="./sample-component/btndropdown.html">Button Dropdown</a></li>
                   <li class="divider"></li>
@@ -73,8 +64,113 @@
         </div>
       </div>
     </nav>
-    <h2>환영합니다!</h2>
-    <h3>Bootstrap의 세계에 오신걸 환영합니다.</h3>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>환영합니다!</h1>
+          <p>Bootstrap의 세계에 오신걸 환영합니다</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h1 class="list-group-item-heading">Bootstrap World!!!</h1>
+        <p class="list-group-item-text">부트스트랩 실습을 위한 홈페이지 입니다.</p>
+      </a>
+    </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="./sample-javascript/img/img1.jpg" alt="Overwatch 1">
+                <div class="carousel-caption">
+                  <h3>Overwatch</h3>
+                  <p>Mission 1</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="./sample-javascript/img/img2.jpg" alt="Overwatch 2">
+                <div class="carousel-caption">
+                  <h3>Overwatch</h3>
+                  <p>Mission 2</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="./sample-javascript/img/img3.jpg" alt="Overwatch 3">
+                <div class="carousel-caption">
+                  <h3>Overwatch</h3>
+                  <p>Mission 3</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+      <div class="col-sm-3">
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  공지
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                환영합니다. 부트스트랩 실습관련 페이지 입니다. 관련 문의와 글만 올려주세요!! 가입문의는 가입문의 게시판에 문의해주세요.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-group" id="accordionList" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-danger">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionList" href="#list-group" aria-expanded="true" aria-controls="collapseOne">
+                  게시판1
+                </a>
+              </h4>
+            </div>
+            <div id="list-group" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <ul class="list-group">
+                <li class="list-group-item">문의게시판</li>
+                <li class="list-group-item">자유글   <button class="btn btn-primary" type="button">
+                최근게시물 <span class="badge">5</span></li>
+                <li class="list-group-item">가입문의</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
