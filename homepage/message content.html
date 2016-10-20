@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+  </head>
+  <body>
+    <section class="container" style="padding-top: 70px">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="./home.html">Home</a></li>
+            <li role="presentation"><a href="./making info.html">Making Info & Shop</a></li>
+            <li role="presentation" class="active"><a href="./message.html">Message Board</a></li>
+            <li role="presentation"><a href="./faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <section class="container-fruid">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">문의드립니다</h3>
+              </div>
+              <div class="panel-body">
+                <p><strong>최순실딸 특혜 수업, 정유라는 애초 수강신청도 할수 없는 과목이었다</strong></p>
+                <p>최순실씨(60)의 딸 정유라씨(20)가 이화여대 의류산업학과 수업에서 특별 대우를 받았다는 정황이 또 드러났다.
+                20일 경향신문이 입수한 지난 여름 계절학기 ‘글로벌 융합 문화 체험 및 디자인 연구’ 수업의 사전평가서를 보면 총 8장 분량의 파워포인트 문서에 각각 1st look, 2nd look, 확정 디자인, 액세서리, 이미지 맵 등으로 항목이 나눠져있다. 중국 구이저우 패션쇼에 내세울 작품에 대한 컨셉을 설명하도록 한 것이다.
+                학생들은 여기에 지난해부터 준비해온 졸업 패션쇼 작품의 사진과 일러스트 등을 직접 기입했다. 한 학생은 “사후평가서도 사전평가서와 유사한 양식”이라고 말했다. 사후평가서는 중국 패션쇼 참가 작품에 대해 디자인, 작품 제작까지의 과정을 포트폴리오로 만들어 제출한다.
+                그러나 체육과학부 소속인 정씨는 애초에 사전평가서에 기재할 작품 자체가 없었다. 더군다나 중국 구이저우 패션쇼에도 적극적으로 참여하지 않아 사후평가서도 작성할 수 없었다. 정씨가 이 수업의 평가 내용을 잘 모르면서 무리하게 수강신청을 했거나, 담당 교수가 정씨를 특별히 봐줬다는 의심이 드는 부분이다. 이 수업은 정식 수강신청 기간에 신청을 받은 수업도 아니었다.
+                이 수업의 평가방법은 사전평가서 10%, 사후평가서 70%, 학생 참여도 20%로 돼있다.
+                해당 수업 담당인 이인성 의류산업학과 교수는 지난 17일 학교 측이 개최한 비공개 간담회에서 타과생이 관심을 보여 잘 해줬다는 취지로 해명했다.
+                이 교수는 정씨에게 ‘패스’를 부여한 이유에 대해서는 “(민속 문화 체험을 한) 그 정도 참가로도 미흡은 했지만 페일을 줄 수 없었고 패스는 제 입장에서는 줄 수 있다고 판단했다”고 밝혔다.</p>
+                <p><strong>이거.. 말이 되는건가요?? 궁금해욤.</strong></p>
+
+              </div>
+              <div class="panel-footer">
+                <p>작성자:꼴뚜기    작성일:2016-10-19
+                  <a class="btn btn-default" href="./message.html" role="button">목록</a>
+                  <a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#smallModal">삭제</a>
+                </p>
+              </div>
+            </div>
+            <nav>
+              <ul class="pagination">
+                <li class="disabled">
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+      </div>
+    </section>
+
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">삭제여부확인</h4>
+          </div>
+          <div class="modal-body">
+            <p>정말로 삭제하시겠습니까?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">예</button>
+            <button type="button" class="btn btn-primary">아니오</button>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
