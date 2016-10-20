@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Group</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <section class="container" style="padding-top: 70px;">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="/index.html">Home</a></li>
+            <li role="presentation"><a href="/sample-component/dropdown.html">Dropdown</a></li>
+            <li role="presentation"><a href="/sample-component/btngroup.html">Button Group</a></li>
+            <li role="presentation"><a href="/sample-component/btndropdown.html">Button Dropdown</a></li>
+            <li role="presentation" class="active"><a href="#">Group</a></li>
+            <li role="presentation"><a href="/sample-component/inputgroup.html">Input Group</a></li>
+            <li role="presentation"><a href="/sample-component/jumbotron.html">Jumbo Tron</a></li>
+            <li role="presentation"><a href="/sample-component/media.html">Media</a></li>
+            <li role="presentation"><a href="/sample-component/navs.html">Navs</a></li>
+            <li role="presentation"><a href="/sample-component/navbar.html">Navbar</a></li>
+            <li role="presentation"><a href="/sample-component/pagenation.html">pagenation</a></li>
+            <li role="presentation"><a href="/sample-component/progressbar.html">progressbar</a></li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">JavaScript <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="./sample-javascript/modal.html">Modal</a></li>
+                <li><a href="./sample-javascript/dropdown.html">Drop Down</a></li>
+                <li><a href="./sample-javascript/scrollspy.html">Scroll Spy</a></li>
+                <li><a href="./sample-javascript/tooltip.html">Tooltip</a></li>
+                <li><a href="./sample-javascript/tabnav.html">Tabnav</a></li>
+                <li><a href="./sample-javascript/popover.html">Popover</a></li>
+                <li><a href="./sample-javascript/loading.html">Loading</a></li>
+                <li><a href="./sample-javascript/collapse.html">Collapse</a></li>
+                <li><a href="./sample-javascript/carousel.html">Carousel</a></li>
+                <li><a href="./sample-javascript/affix.html">Affix</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <ul class="list-group">
+            <li class="list-group-item"><span class="badge">14</span><i class="fa fa-blind" aria-hidden="true"></i> Cras justo odio</li>
+            <li class="list-group-item"><span class="badge">63</span><i class="fa fa-bomb" aria-hidden="true"></i> Dapibus ac facilisis in</li>
+            <li class="list-group-item"><span class="badge">21</span><i class="fa fa-camera" aria-hidden="true"></i> Morbi leo risus</li>
+            <li class="list-group-item"><span class="badge">35</span><i class="fa fa-cloud" aria-hidden="true"></i> Porta ac consectetur ac</li>
+            <li class="list-group-item"><span class="badge">77</span><i class="fa fa-bookmark" aria-hidden="true"></i> Vestibulum at eros</li>
+          </ul>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              Cras justo odio
+            </a>
+            <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item list-group-item-info">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-danger disabled">Vestibulum at eros</a>
+          </div>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              <h4 class="list-group-item-heading">List Group Item Heading</h4>
+              <p class="list-group-item-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-success">
+              <h4 class="list-group-item-heading">List Group Item Heading</h4>
+              <p class="list-group-item-text">Dapibus ac facilisis in</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-info">
+              <h4 class="list-group-item-heading">List Group Item Heading</h4>
+              <p class="list-group-item-text">Morbi leo risus</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-warning">
+              <h4 class="list-group-item-heading">List Group Item Heading</h4>
+              <p class="list-group-item-text">Porta ac consectetur ac</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-danger disabled">
+              <h4 class="list-group-item-heading">List Group Item Heading</h4>
+              <p class="list-group-item-text">Vestibulum at eros</p>
+            </a>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              Basic panel example
+            </div>
+          </div>
+
+          <div class="panel panel-danger">
+            <div class="panel-heading">Panel heading without title</div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+            <div class="panel-footer">Panel footer</div>
+          </div>
+
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+              <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-striped table-bordered table-hover text-center">
+              <thead>
+                <tr>
+                  <th class="text-center">No</th>
+                  <th class="text-center">Name</th>
+                  <th class="text-center">Age</th>
+                  <th class="text-center">City</th>
+                </tr>
+              </thead>
+              <tdody>
+                <tr>
+                  <td>1</td>
+                  <td>구하라</td>
+                  <td>22</td>
+                  <td>서울</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>고아라</td>
+                  <td>25</td>
+                  <td>부산</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>김사랑</td>
+                  <td>32</td>
+                  <td>천안</td>
+                </tr>
+              </tdody>
+            </table>
+          </div>
+
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+              <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+
+            <!-- List group -->
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bsV07RdYf4k"></iframe>
+          </div>
+
+          <!-- 4:3 aspect ratio -->
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bsV07RdYf4k"></iframe>
+          </div>
+
+          <div class="well">Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+
+          <br><br><br><br>
+        </div>
+      </div>
+    </section>
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

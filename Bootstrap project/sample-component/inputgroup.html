@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Input Group</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/inputgroup.css">
+  </head>
+  <body>
+    <section class="container" style="padding-top: 70px;>
+      <div class="row">
+        <div class="col-sm-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="/index.html">Home</a></li>
+            <li role="presentation"><a href="/sample-component/dropdown.html">Dropdown</a></li>
+            <li role="presentation"><a href="/sample-component/btngroup.html">Button Group</a></li>
+            <li role="presentation"><a href="/sample-component/btndropdown.html">Button Dropdown</a></li>
+            <li role="presentation"><a href="/sample-component/group.html">Group</a></li>
+            <li role="presentation" class="active"><a href="#">Input Group</a></li>
+            <li role="presentation"><a href="/sample-component/jumbotron.html">Jumbo Tron</a></li>
+            <li role="presentation"><a href="/sample-component/media.html">Media</a></li>
+            <li role="presentation"><a href="/sample-component/navs.html">Navs</a></li>
+            <li role="presentation"><a href="/sample-component/navbar.html">Navbar</a></li>
+            <li role="presentation"><a href="/sample-component/pagenation.html">pagenation</a></li>
+            <li role="presentation"><a href="/sample-component/progressbar.html">progressbar</a></li>
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">JavaScript <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="./sample-javascript/modal.html">Modal</a></li>
+                <li><a href="./sample-javascript/dropdown.html">Drop Down</a></li>
+                <li><a href="./sample-javascript/scrollspy.html">Scroll Spy</a></li>
+                <li><a href="./sample-javascript/tooltip.html">Tooltip</a></li>
+                <li><a href="./sample-javascript/tabnav.html">Tabnav</a></li>
+                <li><a href="./sample-javascript/popover.html">Popover</a></li>
+                <li><a href="./sample-javascript/loading.html">Loading</a></li>
+                <li><a href="./sample-javascript/collapse.html">Collapse</a></li>
+                <li><a href="./sample-javascript/carousel.html">Carousel</a></li>
+                <li><a href="./sample-javascript/affix.html">Affix</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-9">
+          <h1>Input Group</h1>
+          <section>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-addon">.00</span>
+            </div>
+          </section>
+        </section>
+        <section class="container">
+          <h1>Button Down</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div><!-- /btn-group -->
+                <input type="text" class="form-control" aria-label="...">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Go!</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </section>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

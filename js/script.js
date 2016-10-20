@@ -12,6 +12,6 @@ var i = 0;
     }
     var label = i + '%';
     $('#auto_progress').css('width', label);
-    $('#auto_progress').html(label);
+    $('#auto_progress').php(label);
     i++;
   }, 500);

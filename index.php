@@ -1,25 +1,105 @@
-<?php
- $var1 = 10;
- $var2 = 20;
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alpha Maker76</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Alpha Maker76[α M76]</a>
+        </div>
 
- echo $var1.'<br>';
- echo $var1 + $var2.'<br>';
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.php">Home</a></li>
+            <li><a href="./making info.php">Making Info & Shop</a></li>
+            <li><a href="./board.php">Board</a></li>
+            <li><a href="./faq.php">FAQ</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
- $array = [10, 20, 30];
- $object = array("name" => "Nick", "age" => 30);
- print_r($array);
- print_r($object);
+    <section class="container">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+          <h1 class="list-group-item-heading">
+            <strong>Welcome!! α M76's World</strong>
+            <p></p>
+        </a>
+      </div>
+      <p><h3>Alpha Maker76's Making Story</h3><h5>3D프린팅, 석고, 목공예 등 핸드메이드 작업에 대한 정보를 공유합니다</h5></p>
+    </section>
 
- echo $array[0].'<br>';
- echo $object["name"].'<br>';
+    <section class="container">
+      <div>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
 
- function add($num1, $num2) {
-  //  echo $var1 + $var2;
-   return $num1 + $num2;
- }
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./img/img1.jpg" alt="Overwatch 1">
+              <div class="carousel-caption">
+                <h3>α M76</h3>
+                <p>3D Pirinting</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./img/img2.jpg" alt="Overwatch 2">
+              <div class="carousel-caption">
+                <h3>α M76</h3>
+                <p>Making</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./img/img3.jpg" alt="Overwatch 3">
+              <div class="carousel-caption">
+                <h3>α M76</h3>
+                <p>Hand Craft</p>
+              </div>
+            </div>
+          </div>
 
- // 아래처럼 사용하면 에러:함수에서만 적용되는 지역(매개,로컬)변수
- // echo $num1.$num2;
- // 전역(글로벌)변수:전체에서 쓸 수 있는 변수
- echo add(1,2);
-?>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
