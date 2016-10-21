@@ -7,7 +7,7 @@
     $conn = new PDO($host, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
     /* Data 조회를 위한 Query 작성 */
-    $stmt = $conn->prepare('SELECT * FROM board');
+    $stmt = $conn->prepare('SELECT * FROM board ORDER BY id DESC LIMIT 0,5');
     /* Query 실행 */
     $stmt->execute();
     /* 조회한 Data를 배열(Array) 형태로 모두 저장 */
@@ -24,11 +24,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <title>α M76-Board</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/tabnav.css">
   </head>
   <body>
     <section class="container" style="padding-top: 70px">
@@ -178,7 +177,7 @@
                   </table>
                 </div>
               </div>
-              <a class="btn btn-default" href="./board writing.php" role="button">글쓰기</a>
+              <a class="btn btn-default" href="./board_write.php" role="button">글쓰기</a>
             </div>
           </section>
           <nav>
@@ -206,6 +205,5 @@
 
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>

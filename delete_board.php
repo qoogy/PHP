@@ -1,3 +1,20 @@
+<?php
+  $id = $_GET['id'];
+
+
+  /* Database 연결 */
+  $host = 'mysql:host=localhost;dbname=test';
+  $user = 'test';
+  $password = '1234';
+  $conn = new PDO($host, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+
+  /* Data 삭제을 위한 Query 작성 */
+  $stmt = $conn->prepare('DELETE FROM board WHERE id='.$id);
+  /* Query 실행 */
+  $stmt->execute();
+
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -7,7 +24,6 @@
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/navbar.css">
-
   </head>
   <body>
     <section class="container" style="padding-top: 70px">
@@ -16,33 +32,18 @@
           <ul class="nav nav-pills nav-stacked">
             <li role="presentation"><a href="./index.php">Home</a></li>
             <li role="presentation"><a href="./making info.php">Making Info & Shop</a></li>
-            <li role="presentation" class="active"><a href="./board.php">Board</a></li>
+            <li role="presentation" class="active"><a href="#">Board</a></li>
             <li role="presentation"><a href="./faq.php">FAQ</a></li>
           </ul>
         </div>
-
         <div class="col-sm-9">
           <section class="container-fruid">
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">제목</span>
-              <input type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">내용</span>
-              <textarea name="name" rows="10" cols="110" placeholder="  Write"></textarea>
-              </textarea>
-            </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">작성자</span>
-              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-            </div>
+            <h3><strong>성공적으로 삭제되었습니다</strong></h3>
+            <a class="btn btn-default" href="./board.php" role="button">목록</a>
 
           </section>
-      </div>
-    </section>
 
-
-    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- <script src="./js/script.js"></script> -->
   </body>
