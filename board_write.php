@@ -15,7 +15,7 @@
           <ul class="nav nav-pills nav-stacked">
             <li role="presentation"><a href="./index.php">Home</a></li>
             <li role="presentation"><a href="./making info.php">Making Info & Shop</a></li>
-            <li role="presentation" class="active"><a href="#">Board</a></li>
+            <li role="presentation" class="active"><a href="./board.php">Board</a></li>
             <li role="presentation"><a href="./faq.php">FAQ</a></li>
           </ul>
         </div>
@@ -38,6 +38,15 @@
               <label for="author" class="col-sm-1 control-label">작성자</label>
               <div class="col-sm-11">
                 <input type="text" class="form-control" id="author" name="author" placeholder="작성자를 입력하세요">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-1 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="notice" name="notice"> 공지사항
+                  </label>
+                </div>
               </div>
             </div>
             <div class="form-group">

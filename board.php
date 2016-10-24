@@ -6,8 +6,13 @@
     $password = '1234';
     $conn = new PDO($host, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
+    // 공지사항 게시물 리스트
+    // $stmt = $conn->prepare('SELECT * FROM board WHERE notice=1 ORDER BY id DESC LIMIT')
+    // $stmt->execute();
+    // $notice_list = $stmt->fetchAll();
+
     /* Data 조회를 위한 Query 작성 */
-    $stmt = $conn->prepare('SELECT * FROM board ORDER BY id DESC LIMIT 0,5');
+    $stmt = $conn->prepare('SELECT * FROM board ORDER BY id DESC LIMIT 0,10');
     /* Query 실행 */
     $stmt->execute();
     /* 조회한 Data를 배열(Array) 형태로 모두 저장 */

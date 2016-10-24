@@ -2,6 +2,14 @@
   $title = $_GET['title'];
   $content = $_GET['content'];
   $author = $_GET['author'];
+  // (조건식) ? TRUE : FALSE;
+  $notice = (isset($_GET['notice'])) ? $_GET['notice'] : '' ;
+
+  if ($notice == 'on') {
+    $notice = 1;
+  } else {
+    $notice = 0;
+  }
 
   // echo $title.'<br>'.$content.'<br>'.$author;
   /* Database 연결 */
@@ -11,7 +19,7 @@
   $conn = new PDO($host, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
   /* Data 삽입을 위한 Query 작성 */
-  $sql = 'INSERT INTO board (title, content, author) VALUES ("'.$title.'", "'.$content.'", "'.$author.'")';
+  $sql = 'INSERT INTO board (title, content, author, notice) VALUES ("'.$title.'", "'.$content.'", "'.$author.'", "'.$notice.'")';
   // echo $sql;
   $stmt = $conn->prepare($sql);
   /* Query 실행 */
