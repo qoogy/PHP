@@ -29,13 +29,22 @@
             <li><a href="./board.php">Board</a></li>
             <li><a href="./faq.php">FAQ</a></li>
           </ul>
-          <form class="navbar-form navbar-left" role="search">
+          <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <div class="col-sm-5">
+                <input type="loginid" class="form-control" id="loginid" name="loginid" placeholder="ID">
+              </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <div class="form-group">
+              <div class="col-sm-5">
+                <input type="loginpw" class="form-control" id="loginpw" name="loginpw" placeholder="PASSWORD">
+              </div>
+            </div>
+            <a href="#" id="submit" class="btn btn-success">로그인</a>
+            <button type="submit" class="btn btn-danger">회원가입</button>
           </form>
         </div>
+
       </div>
     </nav>
 
@@ -100,6 +109,6 @@
 
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/login.js"></script>
   </body>
 </html>
