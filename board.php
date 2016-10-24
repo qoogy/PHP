@@ -1,5 +1,8 @@
 <?php
 
+  // 데이타베이스 파일을 따로 만들어서 아래 코드를 넣으면 좀더 보기 편하게 정리할 수 있다
+  // include './database.php';
+
     /* Database 연결 */
     $host = 'mysql:host=localhost;dbname=test';
     $user = 'test';
