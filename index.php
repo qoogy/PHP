@@ -30,7 +30,7 @@
             <li><a href="./faq.php">FAQ</a></li>
           </ul>
           <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
+            <div id="log_info" class="form-group">
               <div class="col-sm-5">
                 <input type="loginid" class="form-control" id="loginid" name="loginid" placeholder="ID">
               </div>
